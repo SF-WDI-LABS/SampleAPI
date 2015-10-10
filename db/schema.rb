@@ -13,9 +13,6 @@
 
 ActiveRecord::Schema.define(version: 20150303073442) do
 
-  # These are extensions that must be enabled in order to support this database
-  enable_extension "plpgsql"
-
   create_table "auth_hashes", force: true do |t|
     t.string   "token"
     t.text     "user_hash"
